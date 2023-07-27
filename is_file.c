@@ -14,8 +14,10 @@
 */
 char *find_file(char *cmd, char **sub_dir)
 {
-	int i, fl = 0, struct dirent *stru_name = NULL;
-	DIR *dir = NULL, char *dir_path = malloc(sizeof(char) * 1024);
+	int i, fl = 0;
+	struct dirent *stru_name = NULL;
+	DIR *dir = NULL;
+	char *dir_path = malloc(sizeof(char) * 1024);
 
 	if (dir_path == NULL)
 	{
